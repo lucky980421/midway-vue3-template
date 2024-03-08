@@ -1,0 +1,19 @@
+html,
+body,
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#app,
+body,
+html {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+* {
+  font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue,
+    Helvetica, Arial !important;
+}
