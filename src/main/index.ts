@@ -21,6 +21,10 @@ export class HomeController {
     async home() {
         return this.defaultTemplate()
     }
+    @Get('/')
+    async home1() {
+        return this.defaultTemplate()
+    }
 
 
     defaultTemplate() {

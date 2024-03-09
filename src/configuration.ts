@@ -7,7 +7,6 @@ import * as swagger from "@midwayjs/swagger";
 import { join } from "path";
 // import { DefaultErrorFilter } from './filter/default.filter';
 // import { NotFoundFilter } from './filter/notfound.filter';
-import { ReportMiddleware } from "./middleware/report.middleware";
 import * as view from "@midwayjs/view-nunjucks";
 import * as staticFile from "@midwayjs/static-file";
 import devopsConfig from "./config/devops.config";
@@ -47,7 +46,7 @@ export class ContainerLifeCycle {
 
   async onReady() {
     // add middleware
-    this.app.useMiddleware([ReportMiddleware, ApiResultMiddleware]);
+    this.app.useMiddleware([ApiResultMiddleware]);
 
     // add filter
     // this.app.useFilter([NotFoundFilter, DefaultErrorFilter]);

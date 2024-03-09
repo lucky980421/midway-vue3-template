@@ -10,7 +10,6 @@ export class ApiResultMiddleware implements IMiddleware<Context, NextFunction> {
   }
 
   resolve() {
-    console.log("???")
     return async (ctx: Context, next: NextFunction) => {
       const isApi = apiReg.test(ctx.request.path);
       if (isApi) {
